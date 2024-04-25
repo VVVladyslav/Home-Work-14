@@ -4,7 +4,9 @@ import lombok.Getter;
 import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+
 public class HibernateConfig {
+    
     private static final HibernateConfig INSTANCE;
 
     @Getter
@@ -27,6 +29,4 @@ public class HibernateConfig {
     public static HibernateConfig getInstance() {
         return INSTANCE;
     }
-
 }
-
